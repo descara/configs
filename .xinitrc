@@ -28,4 +28,5 @@ fi
 
 
 xrandr --auto
+nitrogen --restore &
 exec qtile
