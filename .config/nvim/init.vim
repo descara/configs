@@ -23,7 +23,8 @@ call plug#end()
 let g:deoplete#enable_at_startup = 1
 
 set termguicolors
-colorscheme monokai_pro
+"colorscheme monokai_pro
+colorscheme default
 
 
 " General Settings
