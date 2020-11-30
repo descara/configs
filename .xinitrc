@@ -27,6 +27,8 @@ if [ -f "$usermodmap" ]; then
 fi
 
 
-xrandr --auto
+# Start some useful applications
 nitrogen --restore &
+urxvtd &
+
 exec qtile

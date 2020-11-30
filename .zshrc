@@ -29,5 +29,8 @@ else
 fi
 
 alias vim="nvim"
+alias qconfig="nvim ~/.config/qtile/config.py"
+alias spotify="flatpak run com.spotify.Client"
 
 source /usr/share/nvm/init-nvm.sh
+
