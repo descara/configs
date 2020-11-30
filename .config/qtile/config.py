@@ -39,8 +39,13 @@ from libqtile import hook
 
 mod = "mod4"
 
-terminal = guess_terminal()
+#terminal = guess_terminal()
+terminal = 'urxvtc'
 launcher = "rofi -show run"
+
+def terminal_launch(app):
+    terminal_string = 'urxvtc -e {}'
+    return terminal_string.format(app)
 
 keys = [
     # Switch between windows in current stack pane
@@ -72,8 +77,8 @@ keys = [
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # General launchers
-    Key([mod], "r", lazy.spawn(launcher), desc="Start rofi launcher"),
     Key(['mod1', 'shift'], 'p', lazy.spawn(launcher), desc="Start rofi launcher"),
+    Key(['mod1', 'shift'], 'f', lazy.spawn(terminal_launch('ranger')), desc="Start ranger file manager"),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
@@ -81,7 +86,7 @@ keys = [
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown qtile"),
-    #Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 ]
 
 groups = [Group(i) for i in "123456"]
@@ -113,7 +118,7 @@ layouts = [
     # layout.Bsp(),
     # layout.Columns(),
     # layout.Matrix(),
-    # layout.MonadTall(),
+    layout.MonadTall(margin=3),
     # layout.MonadWide(),
     # layout.RatioTile(),
     layout.Tile(margin=3),
@@ -143,8 +148,6 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                #widget.TextBox("default config", name="default"),
-                #widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
                 widget.BatteryIcon(),
