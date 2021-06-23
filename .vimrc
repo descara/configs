@@ -1,3 +1,7 @@
+" ~/.vimrc
+"
+" Author: Reuben Joseph <rjoseph@tutanota.com>
+
 "-----------------Plugins--------------
 "
 
@@ -99,8 +103,7 @@ set nowb
 set noswapfile
 
 " Text, Tab and Indents
-"
-"
+
 "Use spaces instead of tabs
 set expandtab
 
