@@ -8,10 +8,13 @@ Plug 'scrooloose/nerdtree', { 'on': 'NerdTreeToggle' }
 
 " Vim-airline and themes
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline-themes'
 
 " OneHalf Dark Theme
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
+"Plug 'sonph/onehalf', { 'rtp': 'vim' }
+
+" Nord dark theme
+Plug 'arcticicestudio/nord-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -56,7 +59,7 @@ nnoremap <leader>vr :so $MYVIMRC<cr>
 set so=7
 
 " Always show current location
-set ruler
+"set ruler
 
 " Height of command bar
 set cmdheight=1
@@ -81,11 +84,10 @@ set tm=500
 " Enable syntax highlighting and theme
 syntax enable
 set t_Co=256
-set cursorline
-colorscheme onehalfdark
+colorscheme nord
 
 " Configure airline theme
-let g:airline_theme='onehalfdark'
+let g:airline_theme='nord'
 set background=dark
 
 " Files, backups and Undo
