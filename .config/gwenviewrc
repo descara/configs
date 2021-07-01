@@ -1,0 +1,15 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAA/wAAAJwAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP1 XPosition 1920x1080=900
+eDP1 YPosition 1920x1080=336
+
+[Recent Files]
+File1[$e]=$HOME/aur/visual-studio-code-bin/pkg/visual-studio-code-bin/opt/visual-studio-code/resources/app/out/vs/workbench/contrib/welcome/gettingStarted/common/media/dark/terminal.png
+Name1[$e]=terminal.png
+
+[SideBar]
+SideBarSplitterSizes=242,775

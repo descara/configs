@@ -1,0 +1,11 @@
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAAfoAAAIyAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+eDP1 Height 1920x1080=592
+eDP1 Width 1920x1080=506
+eDP1 XPosition 1920x1080=988
+eDP1 YPosition 1920x1080=262
+
+[WalletEditor]
+AlwaysShowContents=false
+SplitterSize=223,256
