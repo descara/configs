@@ -8,3 +8,4 @@ __pycache__
 .config/discord/**
 .config/kwallet/**
 .config/Code/**
+.config/vlc/**
