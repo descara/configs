@@ -107,3 +107,9 @@ unsetopt LIST_BEEP
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# GPG Settings
+GPG_TTY=$(tty)
+export GPG_TTY
+
+PASSWORD_STORE_ENABLE_EXTENSIONS=true
+export PASSWORD_STORE_ENABLE_EXTENSIONS
